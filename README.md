@@ -210,10 +210,13 @@ Below are some sample visualization results of our method:
 ## Citation
 If you find this project useful, please cite:
 ```bibtex
-@article{wang2021p2net,
-  title={P2-Net: Joint Description and Detection of Local Features for Pixel and Point Matching},
-  author={Bing Wang and Changhao Chen and Zhaopeng Cui and Jie Qin and Chris Xiaoxuan Lu and Zhengdi Yu and Peijun Zhao and Zhen Dong and Fan Zhu and Niki Trigoni and Andrew Markham},
-  journal={arXiv:2103.01055 [cs.CV]},
-  year={2021}
+@INPROCEEDINGS {wang2021p2net,
+author = { Wang, Bing and Chen, Changhao and Cui, Zhaopeng and Qin, Jie and Lu, Chris Xiaoxuan and Yu, Zhengdi and Zhao, Peijun and Dong, Zhen and Zhu, Fan and Trigoni, Niki and Markham, Andrew },
+booktitle = { 2021 IEEE/CVF International Conference on Computer Vision (ICCV) },
+title = {{ P2-Net: Joint Description and Detection of Local Features for Pixel and Point Matching }},
+year = {2021},
+pages = {15984-15993},
+doi = {10.1109/ICCV48922.2021.01570}
 }
+
 ```
