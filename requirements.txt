@@ -1,0 +1,14 @@
+Cython==0.29.15
+h5py==2.10.0
+open3d-python==0.7.0.0
+opencv-python==4.2.0.34
+progressbar2==3.51.3
+progressbar2==3.51.3
+protobuf==3.12.2
+python-dateutil==2.8.1
+python-utils==2.4.0
+pytz==2020.1
+scikit-learn==0.21.3
+scipy==1.4.1
+six==1.15.0
+tensorboardX==1.6
