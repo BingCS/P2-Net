@@ -4,7 +4,7 @@ This paper focus on joint description and detection of local features for pixel 
 ## Introduction
 Accurate 2D and 3D keypoint detection and description are vital for establishing image-point cloud correspondences. We propose a dual fully convolutional framework to directly match pixels and points, enabling fine-grained correspondence establishment. Our approach, integrating an ultra-wide reception mechanism and novel loss function, mitigates information variations between pixel and point local regions.
 ### Network Architecture
-![Network](https://github.com/dengdeng492/P2-Net/blob/main/figs/Network.png)
+![Network](https://github.com/BingCS/P2-Net/blob/main/figs/Network.png)
 ## Installation
 Create the environment and install the required libaries:
 ```bibtex
@@ -203,9 +203,9 @@ Evaluation on the 7Scenes dataset:
 
 ## Visualization
 Below are some sample visualization results of our method:
-![Matching visualization1](https://github.com/dengdeng492/P2-Net/blob/main/figs/visualization1.png)
-![Matching visualization2](https://github.com/dengdeng492/P2-Net/blob/main/figs/visualization2.png)
-![Matching visualization3](https://github.com/dengdeng492/P2-Net/blob/main/figs/visualization3.png)
+![Matching visualization1](https://github.com/BingCS/P2-Net/blob/main/figs/visualization1.png)
+![Matching visualization2](https://github.com/BingCS/P2-Net/blob/main/figs/visualization2.png)
+![Matching visualization3](https://github.com/BingCS/P2-Net/blob/main/figs/visualization3.png)
 
 ## Citation
 If you find this project useful, please cite:
