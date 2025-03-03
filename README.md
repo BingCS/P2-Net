@@ -19,7 +19,7 @@ sh compile_wrappers.sh
 The code has been tested on Python 3.8, PyTorch 1.3.1, GCC 11.3 and CUDA 11.7, but it should work with other configurations.
 ## Dataset Download
 ### Indoor Datasets
-#### (1)7Scenes
+#### (1) 7Scenes
 The dataset can be downloaded from [here](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/).
 
 Let's take the '7-scenes-chess' scene as an example to explore its data format: Inside, there's a file named 'camera-intrinsics.txt' containing the internal parameters of the scene's camera.  Additionally, there are multiple folders named 'seq-xx' each containing a bunch of frames saved as '.color.png', '.depth.png', and '.pose.txt' files.
@@ -41,7 +41,7 @@ Although the 7scenes dataset itself doesn't provide point cloud data, you can ge
 ```bibtex
 python 7scenes_gen.py
 ```
-#### (2)RGB-D Scenes V2
+#### (2) RGB-D Scenes V2
 The dataset can be downloaded from [here](https://rgbd-dataset.cs.washington.edu/dataset/rgbd-scenes-v2/).
 
 RGB-D Scenes V2 contains 14 scenes, ranging from `scene_01` to `scene_14`, with the first 10 scenes used for training and the last 4 scenes used for testing.
@@ -51,7 +51,7 @@ The format of this dataset is the same as that of the 7Scenes dataset. Simply ru
 ```bibtex
 python RGB-D_gen.py
 ```
-#### (3)3DMatch
+#### (3) 3DMatch
 The dataset can be downloaded from [here](https://3dmatch.cs.princeton.edu/#rgbd-reconstruction-datasets).
 
 3DMatch dataset consists of data from 62 scenes, with 54 scenes used for training and 8 scenes used for evaluation. The specific scene names can be found in `train.txt` and `test.txt`.
@@ -61,10 +61,10 @@ Generate the '.pkl' format file pairs required for training and validation：
 ```bibtex
 python 3DMatch_gen.py
 ```
-#### (4)ScanNet
+#### (4) ScanNet
 The dataset can be downloaded from [here](https://github.com/ScanNet/ScanNet).
 
-ScanNet is an RGB-D video dataset. We use the smaller subset option provided by the authors, `scannet_frames_25k`, which includes both the training and test sets.
+ScanNet is a RGB-D video dataset. We use the smaller subset option provided by the authors, `scannet_frames_25k`, which includes both the training and test sets.
 
 Organize the data format of this dataset in 7Scenes format.
 
@@ -88,33 +88,33 @@ Generate the '.pkl' format file pairs required for training and validation：
 python Kitti-DC_gen.py
 ```
 ## Trianing
-(1)Take the 7Scenes dataset as an example. The training on 7Scenes dataset can be done by running:
+(1) Take the 7Scenes dataset as an example. The training on 7Scenes dataset can be done by running:
 ```bibtex
 python train_p2net.py  --opt_p2net data_dir="./7Scenes"  img_dir="./7Scenes"
 ```
 
-(2)The training on RGB-D Scenes V2 dataset can be done by running:
+(2) The training on RGB-D Scenes V2 dataset can be done by running:
 ```bibtex
 python train_p2net.py  --opt_p2net data_dir="./RGB-D"  img_dir="./RGB-D"
 ```
 
-(3)The training on 3DMatch dataset can be done by running:
+(3) The training on 3DMatch dataset can be done by running:
 ```bibtex
 python train_p2net.py  --opt_p2net data_dir="./3DMatch"  img_dir="./3DMatch"
 ```
 
-(4)The training on ScanNet dataset can be done by running:
+(4) The training on ScanNet dataset can be done by running:
 ```bibtex
 python train_p2net.py  --opt_p2net data_dir="./ScanNet"  img_dir="./ScanNet"
 ```
 
-(5)The training on Kitti-DC dataset can be done by running:
+(5) The training on Kitti-DC dataset can be done by running:
 ```bibtex
 python train_p2net.py  --opt_p2net data_dir="./Kitti-DC"  img_dir="./Kitti-DC"
 ```
 
 ## Testing
-(1)7Scenes
+(1) 7Scenes
 
 Using the model trained in the previous step, extract keypoints, descriptors, and calculate scores for the dataset:
 ```bibtex
@@ -126,7 +126,7 @@ python test_p2net.py --run evaluator  --opt_evaluation data_dir="./7Scenes"  img
 ```
 
 
-(2)RGB-D Scenes V2
+(2) RGB-D Scenes V2
 
 Using the model trained in the previous step, extract keypoints, descriptors, and calculate scores for the dataset:
 ```bibtex
@@ -138,7 +138,7 @@ python test_p2net.py --run evaluator  --opt_evaluation data_dir="./RGB-D"  img_d
 ```
 
 
-(3)3DMatch
+(3) 3DMatch
 
 Using the model trained in the previous step, extract keypoints, descriptors, and calculate scores for the dataset:
 ```bibtex
@@ -150,7 +150,7 @@ python test_p2net.py --run evaluator  --opt_evaluation data_dir="./3DMatch"  img
 ```
 
 
-(4)ScanNet
+(4) ScanNet
 
 Using the model trained in the previous step, extract keypoints, descriptors, and calculate scores for the dataset:
 ```bibtex
@@ -162,7 +162,7 @@ python test_p2net.py --run evaluator  --opt_evaluation data_dir="./ScanNet"  img
 ```
 
 
-(5)Kitti-DC
+(5) Kitti-DC
 
 Using the model trained in the previous step, extract keypoints, descriptors, and calculate scores for the dataset:
 ```bibtex
