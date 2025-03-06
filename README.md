@@ -173,6 +173,10 @@ Finally, execute the evaluation function and pass in the paths to the extracted 
 python test_p2net.py --run evaluator  --opt_evaluation data_dir="./Kitti-DC"  img_dir="./Kitti-DC"
 ```
 
+## Pretrained models
+Download pre-models from Baidu-Disk:
+[models](https://pan.baidu.com/s/1YJKxK3DclhWhqRvLzCjbSA?pwd=72hp)
+
 ## Results
 Evaluation on Three Benchmarks:
 | PnP | FMR  | IR  |  IN  | RR  |   
